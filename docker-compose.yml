@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gitolite:
+    build: .
+    ports:
+      - "2222:22"
+    volumes:
+      - "./data/repositories:/home/git/repositories"
+      - "./data/data:/home/git/data"
+    restart: unless-stopped
