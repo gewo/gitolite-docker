@@ -2,6 +2,7 @@
 set -x
 chown -R git: /home/git/repositories
 chown -R git: /home/git/data
+chown -R git: /home/git/.ssh
 
 touch /home/git/data/htpasswd
 
